@@ -14,16 +14,29 @@
     --accent: #5f38ea;
 }
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--background );
+}
+
 /* Header/Nav Element Styling */
 header {
     padding: 20px;
     background-color: var(--background);
-    border-bottom: 10px solid var(--secondary);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     color: var(--primary);
+    border-bottom: solid 5px var(--secondary);
+}
+
+header h1 {
+    font-size: 40px;
+    border: solid var(--accent);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px var(--accent);
 }
 
 header nav {
@@ -67,6 +80,86 @@ header nav ul li a:hover {
     height: 400px;
     border-radius: 20px;
     margin: 20px 20px;
-    border: solid var(--secondary);
-    box-shadow: 10px 5px 5px var(--secondary);
+    border: solid var(--accent);
+    box-shadow: 10px 5px 5px var(--accent);
+}
+
+article {
+    border-top: solid 5px var(--secondary);
+}
+
+article section p {
+    color: var(--text);
+}
+
+h2 {
+    border-right: 5px solid var(--pop);
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-header {
+    border-right: 5px solid var(--secondary);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 30px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.about-me {
+    display: flex;
+    padding-top: 20px;
+}
+
+article p {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 85%;
+    padding: 0 30px;
+}
+
+.my-work {
+    display: flex;
+    padding-top: 20px;
+}
+
+/* Contact section styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.contacts {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    align-content: center;
+    color: var(--text);
+}
+
+footer ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: var(--text);
+}
+
+footer ul li a:hover {
+    background: var(--accent);
+    color: var(--primary);
+    border-radius: 15px;
 }
