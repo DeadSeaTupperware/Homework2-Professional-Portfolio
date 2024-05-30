@@ -84,7 +84,7 @@ header nav ul li a:hover {
     box-shadow: 10px 5px 5px var(--accent);
 }
 
-article {
+article.about-me {
     border-top: solid 5px var(--secondary);
 }
 
@@ -122,6 +122,37 @@ article p {
 .my-work {
     display: flex;
     padding-top: 20px;
+}
+
+.project-grid {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    border: solid var(--secondary);
+    display: flex;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+.label {
+    background-color: var(--accent);;
+    color: var(--text);
+    padding: 10px;
+}
+
+.horiseon-seo {
+    background-image: url("../images/Horiseon.png");
 }
 
 /* Contact section styling */
