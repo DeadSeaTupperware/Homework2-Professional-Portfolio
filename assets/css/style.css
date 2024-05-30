@@ -14,15 +14,16 @@
     --accent: #5f38ea;
 }
 
-/* Semantic Element Styling */
+/* Header/Nav Element Styling */
 header {
     padding: 20px;
     background-color: var(--background);
+    border-bottom: 10px solid var(--secondary);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: var(--text);
+    color: var(--primary);
 }
 
 header nav {
@@ -50,4 +51,22 @@ header nav ul li a:hover {
     background: var(--accent);
     color: var(--primary);
     border-radius: 8px;
+}
+
+/* Hero Styling */
+.hero {
+    background-image: url("../images/Philly-skyline.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    height: 400px;
+    border-radius: 20px;
+    margin: 20px 20px;
+    border: solid var(--secondary);
+    box-shadow: 10px 5px 5px var(--secondary);
 }
