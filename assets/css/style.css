@@ -112,7 +112,7 @@ h2 {
     padding-top: 20px;
 }
 
-article p {
+article.about p {
     line-height: 1.6;
     font-size: 20px;
     width: 85%;
@@ -124,35 +124,63 @@ article p {
     padding-top: 20px;
 }
 
+
 .project-grid {
-    width: 80%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
+    display: grid;
     gap: 20px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 410px 210px 210px;
+    grid-template-areas:
+        "horiseon-seo horiseon-seo" 
+        "payroll-tracker personal-blog" 
+        "task-board weather-dashboard";
 }
 
-.project {
-    border: solid var(--secondary);
-    display: flex;
+.project-grid a {
     text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
+}
+.horiseon-seo {
+    grid-area: horiseon-seo;
+}
+.payroll-tracker {
+    grid-area: payroll-tracker;
+}
+.personal-blog {
+    grid-area: personal-blog;
+}
+.task-board {
+    grid-area: task-board;
+}
+.weather-dashboard {
+    grid-area: weather-dashboard;
 }
 
-.project:hover {
-    opacity: 1.0;
+.project-grid img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: greyscale(30%);
+    opacity: 70%;
 }
 
-.label {
+.project-grid img:hover {
+  filter: greyscale(0%);
+  opacity: 100%;
+}
+article figure {
+    width: 100%;
+    position: relative;
+    border: 5px solid var(--secondary);
+}
+
+figcaption {
     background-color: var(--accent);;
     color: var(--text);
     padding: 10px;
-}
-
-.horiseon-seo {
-    background-image: url("../images/Horiseon.png");
+    bottom: 0px;
+    position: absolute;
 }
 
 /* Contact section styling */
