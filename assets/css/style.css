@@ -1,5 +1,53 @@
+/* remove default styling/Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* color variables for referencing */
+:root {
+    --text: #e3fcea;
+    --background: #010a04;
+    --primary: #76f1a5;
+    --secondary: #113a9f;
+    --accent: #5f38ea;
+}
+
+/* Semantic Element Styling */
+header {
+    padding: 20px;
+    background-color: var(--background);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--text);
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 8px;
+    font-size: 28 px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background: var(--accent);
+    color: var(--primary);
+    border-radius: 8px;
 }
