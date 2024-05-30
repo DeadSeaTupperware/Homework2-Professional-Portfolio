@@ -84,7 +84,7 @@ header nav ul li a:hover {
     box-shadow: 10px 5px 5px var(--accent);
 }
 
-article.about-me {
+article#about {
     border-top: solid 5px var(--secondary);
 }
 
@@ -112,7 +112,7 @@ h2 {
     padding-top: 20px;
 }
 
-article.about p {
+article#about p {
     line-height: 1.6;
     font-size: 20px;
     width: 85%;
@@ -166,8 +166,8 @@ article.about p {
 }
 
 .project-grid img:hover {
+opacity: 100%;
   filter: greyscale(0%);
-  opacity: 100%;
 }
 article figure {
     width: 100%;
