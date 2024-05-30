@@ -93,7 +93,6 @@ article section p {
 }
 
 h2 {
-    border-right: 5px solid var(--pop);
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -222,3 +221,65 @@ footer ul li a:hover {
     color: var(--primary);
     border-radius: 15px;
 }
+
+/* Styling for Tablet */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    article#about p {
+        font-size: 16px;
+    }
+} 
+
+/*Styling for Mobile */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+    }
+
+    nav ul {
+        min-height: 80px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .section-header {
+        border-bottom: 5px solid var(--secondary);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    article#about p {
+        font-size: 16px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .my-work {
+       flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .contacts {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer ul {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
